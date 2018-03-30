@@ -1,11 +1,34 @@
+/*
+    #000000 (0, 0, 0) black
+    #1D2B53 (29, 43, 83) dark-blue
+    #7E2553 (126, 37, 83) dark-purple
+    #008751 (0, 135, 81) dark-green
+    #AB5236 (171, 82, 54) brown
+    #5F574F (95, 87, 79) dark-gray
+    #C2C3C7 (194, 195, 199) light-gray
+    #FFF1E8 (255, 241, 232) white
+    #FF004D (255, 0, 77) red
+    #FFA300 (255, 163, 0) orange
+    #FFEC27 (255, 236, 39) yellow
+    #00E436 (0, 228, 54) green
+    #29ADFF (41, 173, 255) blue
+    #83769C (131, 118, 156) indigo
+    #FF77A8 (255, 119, 168) pink
+    #FFCCAA (255, 204, 170) peach
+*/
+
 @font-face {
     font-family: '04b03';
     src        : url('../fonts/04b03.woff2') format('woff2');
 }
 
+* {
+  box-sizing: border-box;
+}
+
 html, body {
-    background-color: #000;
-    color           : #ccc;
+    background-color: #34affc;
+    color           : #1D2B53;
     display         : grid;
     font-family     : '04b03', Arial;
     height          : 100%;
@@ -37,7 +60,8 @@ h2 {
 }
 
 canvas {
-    border                : 0;
+    border                : 10px solid #1D2B53;
+    box-shadow            : 0 0 10px rgba(0, 0, 0, 0.5);
     display               : block;
     height                : 600px;
     image-rendering       : optimizeSpeed;
